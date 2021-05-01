@@ -19,7 +19,7 @@ class Program {
 
 	static void BlocksWindow() {
 		UI.WindowBegin("Block Picker", ref windowPose, new Vec2(20, 0) * U.cm, UIWin.Normal);
-		UI.HSlider("blockSizeSlider", ref BlockDraw.blockSize, 0.025f, 0.1f, 0.005f, 18);
+		UI.HSlider("blockSizeSlider", ref BlockDraw.blockSize, 0.025f, 0.1f, 0.005f, 0.18f);
 		foreach(KeyValuePair<string, Block> block in blockDict) {
 			if(UI.Button(block.Key)) {
 				selectedBlock = block.Value;
